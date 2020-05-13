@@ -127,3 +127,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# robot dependencies
+*rxlog
+*data
+output.xml
+log.html
+report.html
+*Report.css
+*Report.png
+*Report.xsl
