@@ -11,12 +11,12 @@ setuptools.setup(
     description="A small example package",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="",
     packages=setuptools.find_packages(),
     classifiers=[
-        "Programming Language :: Python :: 27",
+        "Programming Language :: Python :: 37",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='==2.7',
+    python_requires='>=3.7',
 )
