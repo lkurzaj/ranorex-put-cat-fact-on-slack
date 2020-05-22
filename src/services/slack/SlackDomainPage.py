@@ -1,18 +1,17 @@
 from robot.api.deco import library, keyword
-from lib.ranorex.src.RanorexLibrary import RanorexLibrary
-
+from ranorexlibrarynet.RanorexLibrary import RanorexProvider
 
 @library
 class SlackDomainPage:
 
     def __init__(self):
-        self.ranorex = RanorexLibrary()
+        self.ranorex = RanorexProvider("C:\\Program Files (x86)\\Ranorex\\Studio\\Bin")
         self.domain_name = "slack.com"
         self.__base_xpath = "/dom[@domain='%s']" % self.domain_name
 
     @keyword("Run Slack Web Client")
     def open_slack_app(self):
-        self.ranorex.start_browser(self.domain_name, "Chrome", "--new-window")
+        self.ranorex.start_browser(self.domain_name, "chrome")
 
     @keyword("Click Launch Slack Button")
     def click_launch_slack_button(self):

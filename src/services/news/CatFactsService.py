@@ -3,7 +3,7 @@ from robot.api import logger
 from robot.api.deco import keyword, library
 
 
-@library(scope="GLOBAL", version='0.1')
+@library
 class CatFactsService:
 
     def __init__(self):
